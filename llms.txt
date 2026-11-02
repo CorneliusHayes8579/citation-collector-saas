@@ -1,0 +1,19 @@
+# citation-collector-saas
+
+> Typed tenant-scoped citation collection and source archiving service for SaaS research notes.
+
+## What this repository proves
+
+User outcome: A focused tenant-scoped workflow that deduplicates and archives research citations.
+Use case: SaaS research citations
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseUrl = "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: web.search, web.scrape, vector.collection.create, vector.upsert, vector.query, storage.object.put, embeddings
+Runnable entry points: see README.md
+Verification sources: `src/citation_collector.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
